@@ -17,7 +17,7 @@ export default class Character {
   }
 
   levelUp() {
-    if (this.health !== 0) {
+    if (this.health < 0) {
       throw new Error("can't raise the level!");
     }
     this.level += 1;

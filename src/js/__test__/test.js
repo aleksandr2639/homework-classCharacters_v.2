@@ -108,7 +108,7 @@ test('method levelup successful', () => {
 
 test('method levelup unsuccessful', () => {
   const personBowman = new Character('John', 'Bowerman', 25, 25);
-  personBowman.health = 0;
+  personBowman.health = -5;
   expect(() => personBowman.levelUp()).toThrow(
     'cannot raise the level!',
   );
